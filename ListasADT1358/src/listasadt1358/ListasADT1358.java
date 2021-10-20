@@ -5,6 +5,7 @@
  */
 package listasadt1358;
 
+import fes.aragon.unam.adts.DoubleLinkedList;
 import ico.fes.modelo.Empleado;
 import ico.fes.unam.edd1358.LinkedListADT;
 
@@ -34,6 +35,22 @@ public class ListasADT1358 {
         
         lsl2.transversal();
         
+        
+        DoubleLinkedList ldl = new DoubleLinkedList();
+        ldl.append(new Integer(10));
+        ldl.append(new Integer(20));
+        ldl.transversal();
+        ldl.append(new Integer(30));
+        ldl.transversal();
+        ldl.append(new Integer(40));
+        ldl.transversal();
+        
+        
+        DoubleLinkedList ldl2 = new DoubleLinkedList();
+        ldl2.append(new Empleado(12, "Jose", "Perez", "Martinez", 1523.4f, 2015, 1));
+        ldl2.append(new Empleado(13, "Diana", "Prada", "Ortega", 1523.4f, 2015, 1));
+        ldl2.append(new Empleado(14, "Santiago", "Austria", "Campos", 1523.4f, 2015, 1));
+        ldl.transversal();
     }
     
 }

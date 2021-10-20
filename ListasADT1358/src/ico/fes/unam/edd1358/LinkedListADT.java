@@ -57,7 +57,7 @@ public class LinkedListADT {
     public void transversal(){
         Nodo currNode = this.head;
         while(currNode != null){
-            System.out.println(currNode.data + "-->");
+            System.out.print(currNode.data + "-->");
             currNode = currNode.next;
         }
         System.out.println("");
